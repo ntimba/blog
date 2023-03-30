@@ -1,0 +1,50 @@
+# Backup and temporary files
+*~
+.*.swp
+.DS_Store
+*.bak
+*.tmp
+
+# Build files
+node_modules/
+dist/
+build/
+bin/
+obj/
+out/
+
+# Generated files
+*.log
+*.cache
+*.pyc
+*.pyo
+*.class
+*.war
+*.jar
+
+# Files containing sensitive or personal information
+.env
+*.pem
+*.key
+*.p12
+*.password
+
+# Editor configuration files
+.vscode/
+.idea/
+*.iml
+
+# Documentation files
+docs/
+doc/
+*.md
+
+# Test files
+test/
+tests/
+__tests__/
+
+# Dependency files
+*.lock
+package-lock.json
+yarn.lock
