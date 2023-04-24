@@ -1,0 +1,19 @@
+{
+  "name": "blog_personnel",
+  "version": "1.0.0",
+  "description": "Blog créé dans le cadre d'une formation sur OpenClassrooms",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntimba/blog.git"
+  },
+  "author": "Chancy Ntimba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntimba/blog/issues"
+  },
+  "homepage": "https://github.com/ntimba/blog#readme"
+}
