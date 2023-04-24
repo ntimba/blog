@@ -1,0 +1,49 @@
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Abstracts
+@import "./abstracts/extensions";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+@import "./abstracts/variables";
+
+// Vendors
+
+
+// Base
+@import "./base/typography";
+
+// Components
+@import "./components/article";
+@import "./components/button";
+@import "./components/categories";
+@import "./components/copyright";
+@import "./components/pagination";
+@import "./components/project";
+@import "./components/searchbar";
+@import "./components/socialmedia";
+
+
+// layout
+@import "./layouts/about";
+@import "./layouts/bloghero";
+@import "./layouts/contactform";
+@import "./layouts/footer";
+@import "./layouts/form";
+@import "./layouts/hero";
+@import "./layouts/nav";
+@import "./layouts/projects";
+
+// pages
+@import "./pages/about";
+@import "./pages/blog";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/portfolio";
+@import "./pages/project";
+@import "./pages/skills";
+
+// theme
+
+

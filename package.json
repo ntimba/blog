@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ntimba/blog/issues"
   },
-  "homepage": "https://github.com/ntimba/blog#readme"
+  "homepage": "https://github.com/ntimba/blog#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
 }
