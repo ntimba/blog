@@ -1,0 +1,85 @@
+.text-muted {
+  color: red;
+}
+.text-danger {
+  color: red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.signupImage {
+  background-image: url(../img/handing-key.svg);
+  background-size: cover;
+  background-position: cover;
+}
+
+.bg-register-image {
+  background: url(https://source.unsplash.com/K4mSJ7kc0As/600x800);
+  background-position: center;
+}
+
+.bg-login-image {
+  background: url(https://source.unsplash.com/K4mSJ7kc0As/600x800);
+  background-position: center;
+}
+
+/* .p-5{
+    padding: 3rem!important;
+} */
+.p-45 {
+  /* border: 3px solid red; */
+  padding: 3rem !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  width: 60px;
+}
+.navbar__contact-details {
+  font-size: 0.8rem;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar__contact-details a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
