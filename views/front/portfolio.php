@@ -4,7 +4,7 @@
     <title>Page title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-bootstrap.png">
 </head>
 <body>
@@ -29,33 +29,44 @@
         </div>
       </nav>
                         
-      <section class="py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-5 mb-5 mb-md-0">
-              <h2 class="display-5 fw-bold mb-3">Salut, Je suis Ntimba</h2>
-              <p class="lead text-muted mb-4">With this tool, you will get much better results at work and develop new skills. Will you take the risk of trying the latest version of our application?</p>
-              <a class="btn btn-primary" href="#">Contactez-moi</a>
-            </div>
-            <div class="col-12 col-md-6 ms-auto">
-              <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-square.png" alt="">
-            </div>
+      <section class="position-relative py-5"><div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <img class="img-fluid mb-5 d-lg-none" src="bootstrap5-plain-assets/images/blue-400-square.png" alt=""><h2 class="display-5 mb-4 fw-bold" contenteditable="false"></h2><h2 class="display-5 fw-bold mt-2" style="outline: none; user-select: text;" contenteditable="false">Certains de mes travaux créatifs</h2>
+            <p class="lead text-muted mb-4" contenteditable="false"><span style="font-size: 16px; text-align: center;">En tant que développeur PHP, j'ai collaboré sur divers projets. Consultez mon portfolio et contactez-moi pour une collaboration efficace</span></p>
           </div>
+          <div class="d-none d-lg-block position-absolute top-0 end-0 h-100" style="width: 50%; background-image: url('bootstrap5-plain-assets/images/blue-400-square.png'); background-repeat: no-repeat; background-size: cover;"></div>
+        </div>
         </div>
       </section>
                         
-      <section class="py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 col-xl-7 text-center">
-
-              <h2 class="display-5 fw-bold mt-2 mb-3">À propos de moi</h2>
-              <p class="lead text-muted mb-4">If you have ever wondered how to develop your brand, this is the place for you. Take a big step forward in growing your business with this great tool.</p>
-              <div class="d-flex flex-wrap justify-content-center">
-      <a class="btn btn-primary me-2 mb-2 mb-sm-0" href="index.php?action=portfolio">Voir mes projets</a><a class="btn btn-outline-secondary mb-2 mb-sm-0" href="#">Télécharger mon cv</a>
-      </div>
-            </div>
+      <section class="py-5"><div class="container">
+        <ul class="nav nav-pills justify-content-center mb-5"><li class="nav-item"><a class="nav-link active" href="#">Active tab</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Normal tab</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Normal tab</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Normal tab</a></li>
+        </ul><div class="row">
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-6 p-2">
+              <img class="img-fluid rounded" src="bootstrap5-plain-assets/images/blue-400-square.png" alt=""></div>
+            <div class="col-6 p-2">
+              <img class="img-fluid rounded" src="bootstrap5-plain-assets/images/blue-400-square.png" alt=""></div>
+            <div class="col-12 p-2">
+              <img class="img-fluid rounded" src="bootstrap5-plain-assets/images/blue-400-square.png" alt=""></div>
           </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-12 p-2">
+              <img class="img-fluid rounded" src="bootstrap5-plain-assets/images/blue-400-square.png" alt=""></div>
+            <div class="col-6 p-2">
+              <img class="img-fluid rounded" src="bootstrap5-plain-assets/images/blue-400-square.png" alt=""></div>
+            <div class="col-6 p-2">
+              <img class="img-fluid rounded" src="bootstrap5-plain-assets/images/blue-400-square.png" alt=""></div>
+          </div>
+        </div>
+        </div>
         </div>
       </section>
                         

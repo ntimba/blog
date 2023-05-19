@@ -6,17 +6,17 @@ namespace App\Models;
 
 class User
 {
-    private int $idUser;
+    private int $id;
     private string $firstName;
     private string $lastName;
     private string $email;
     private string $password;
     private string $registrationDate;
     private string $role;
-    private string $token;
-    private string $profilePicture;
+    private ?string $token;
+    private ?string $profilePicture;
     private string $biography;
-    private bool $userStatut;
+    private bool $statut;
     private bool $auditedAccount;
     private array $errors = [];
     
@@ -52,11 +52,11 @@ class User
      *          SETTERS          *
      *****************************/
 
-    public function setId(int $idUser) : void
+    public function setId(int $id) : void
     {
-        if(is_numeric($idUser) && !empty($idUser))
+        if(is_numeric($id) && !empty($id))
         {
-            $this->idUser = $idUser;
+            $this->id = $id;
         }
     }
 
@@ -132,21 +132,18 @@ class User
     }
 
 
-    public function setToken(string $token) : void
-    {      
-        if($token == ' ') {
-            $this->token = '';
-        }
-        elseif( is_string( $token ) && !empty($token) )
-        {
-            $this->token = $token;
-        }
-    }
-    
-    
-
-    public function setProfilepicture(string $profilePicture) : void
+    public function setToken(?string $token): void
     {
+        $this->token = $token;
+    }
+
+    public function setProfilePicture(?string $profilePicture) : void
+    {
+        if($profilePicture === null) {
+            $this->getProfilePicture = $profilePicture;
+            return;
+        }
+
         if( is_string( $profilePicture ) && !empty($profilePicture) )
         {
             $this->profilePicture = $profilePicture;
@@ -154,6 +151,12 @@ class User
             $this->errors[] = self::INVALID_PROFILE_PICTURE;
         } 
     }
+
+    // public function setToken(?string $token): void
+    // {
+    //     $this->token = $token;
+    // }
+
 
 
     public function setBiography(string $biography) : void
@@ -167,19 +170,27 @@ class User
     }
     
 
-    public function setUserstatut(bool $userStatut) : void
+    public function setStatut($statut) : void
     {
-        if( is_bool( $userStatut ) && !empty($userStatut) )
+        if( is_bool( $statut ) )
         {
-            $this->userStatut = $userStatut;
-        } else {
+            $this->statut = $statut;
+        } elseif (is_int( $statut )) 
+        {
+            $this->statut = ($statut === 1);
+        } 
+        else {
             $this->errors[] = self::INVALID_USER_STATUT;
         } 
     }
 
-    public function setAuditedaccount(bool $audited){
+
+    public function setAuditedaccount($audited): void
+    {
         if(is_bool($audited)){
             $this->auditedAccount = $audited;
+        }elseif( is_int( $audited ) ){
+            $this->auditedAccount = ( $audited === 1 );
         }
     }
     
@@ -190,7 +201,7 @@ class User
 
     public function getId() : int
     {
-        return $this->idUser;
+        return $this->id;
     }
 
     public function getFirstname() : string 
@@ -223,24 +234,24 @@ class User
         return $this->role;
     }
 
-    public function getToken() : string
+    public function getToken() : ?string
     {
         return $this->token;
     }
 
-    // public function getProfilepicture() : string
-    // {
-    //     return $this->profilePicture;
-    // }
+    public function getProfilePicture() : ?string
+    {
+        return $this->profilePicture;
+    }
 
     public function getBiography() : string
     {
-        return $this->Biography;
+        return $this->biography;
     }
 
-    public function getUserstatut() : bool
+    public function getStatut() : bool
     {
-        return $this->userStatut;
+        return $this->statut;
     }
 
     public function getAuditedaccount() : bool

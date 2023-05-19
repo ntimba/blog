@@ -1,26 +1,36 @@
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 // Abstracts
-@import "./abstracts/extensions";
-@import "./abstracts/functions";
-@import "./abstracts/mixins";
-@import "./abstracts/placeholders";
 @import "./abstracts/variables";
-
-// Vendors
-
+@import "./abstracts/display";
 
 // Base
+@import "./base/global";
 @import "./base/typography";
 
 // Components
+@import "./components/animation";
 @import "./components/article";
+@import "./components/background";
+@import "./components/border";
 @import "./components/button";
+@import "./components/cards";
 @import "./components/categories";
+@import "./components/charts";
 @import "./components/copyright";
+@import "./components/dropdowns";
+@import "./components/error";
+@import "./components/navglobal";
+@import "./components/navsidebar";
+@import "./components/navtopbar";
 @import "./components/pagination";
+@import "./components/progress";
 @import "./components/project";
+@import "./components/rotate";
 @import "./components/searchbar";
 @import "./components/socialmedia";
-
+@import "./components/text";
 
 // layout
 @import "./layouts/about";
@@ -29,6 +39,7 @@
 @import "./layouts/footer";
 @import "./layouts/form";
 @import "./layouts/hero";
+@import "./layouts/login";
 @import "./layouts/nav";
 @import "./layouts/projects";
 
@@ -42,5 +53,3 @@
 @import "./pages/skills";
 
 // theme
-
-

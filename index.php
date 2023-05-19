@@ -3,7 +3,8 @@
 use App\Lib\DatabaseConnection;
 
 // Front controllers
-use App\Controllers\Front;
+use App\Controllers\Frontend;
+use App\Controllers\Backend;
 
 
 
@@ -23,34 +24,82 @@ function debug($var){
 
 
 if( isset($_GET['action']) && $_GET['action'] !== '' ) {
-    $front = new Front;
+    $frontend = new Frontend;
+    $backend = new Backend;
 
     switch ($_GET['action']) {
-        case 'register':
-            $front->getRegisterPage();
-            break;
+
+        // Front
         case 'login':
-            $front->getLoginPage();
+            $frontend->getLogin();
             break;
-        case 'account':
-            $front->getAccountPage();
+        case 'register':
+            $frontend->getRegister();
             break;
-        case 'confirmAccount':
+        case 'forgotpassword':
+            $frontend->getForgotPassword();
+            break;
+        case 'about':
+            $frontend->getAbout();
+            break;
+
+        case 'skills':
+            $frontend->getSkills();
+            break;
+            
+        case 'blog':
+            $frontend->getBlog();
+            break;
+                
+        case 'article':
+            $frontend->getArticle();
+            break;
+
+        case 'portfolio':
+            $frontend->getPortfolio();
+            break;
+
+        case 'contact':
+            $frontend->getContact();
+            break;
+        case 'page':
+
+            // Affichage des pages normal
+        case 'page':
+            $frontend->getPage();
+            break;
+
+        case 'verifyuser':
             // Ajouter afficher la page de confirmation de mail
-            $front->getAccountPage();
+            $frontend->verifyAccount();
             break;
+            
+            // Back
+        case 'dashboard':
+            $backend->getDashboard();
+            break;
+        case 'articles':
+            $backend->getArticles();
+            break;
+        case 'users':
+            $backend->getUsers();
+            break;
+        case 'comments':
+            $backend->getComments();
+            break;
+
         case 'test':
-            $front->getTestPage();
+            $backend->getTestPage();
             break;
         default:
             header('HTTP/1.0 404 Not Found');
-            include("404.php");
+            include("views/404.php");
             break;
     }    
 } else {
     // Page d'accueil
 
-    $front = new Front;
-    $front->getHomePage();
+    $frontend = new Frontend;
+    $frontend->getAbout();
 
 }

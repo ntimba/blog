@@ -29,33 +29,48 @@
         </div>
       </nav>
                         
-      <section class="py-5">
+      <section class="position-relative py-5">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-5 mb-5 mb-md-0">
-              <h2 class="display-5 fw-bold mb-3">Salut, Je suis Ntimba</h2>
-              <p class="lead text-muted mb-4">With this tool, you will get much better results at work and develop new skills. Will you take the risk of trying the latest version of our application?</p>
-              <a class="btn btn-primary" href="#">Contactez-moi</a>
-            </div>
-            <div class="col-12 col-md-6 ms-auto">
-              <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-square.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-                        
-      <section class="py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 col-xl-7 text-center">
+          <div class="row">
+            <div class="col-12 col-md-9 col-lg-5 mx-auto mx-lg-0 mb-5">
+              <div class="text-center py-5">
+                <span class="text-muted">S'inscrire</span>
+                <h3 class="fw-bold mb-5">Créer un nouveau compte</h3>
 
-              <h2 class="display-5 fw-bold mt-2 mb-3">À propos de moi</h2>
-              <p class="lead text-muted mb-4">If you have ever wondered how to develop your brand, this is the place for you. Take a big step forward in growing your business with this great tool.</p>
-              <div class="d-flex flex-wrap justify-content-center">
-      <a class="btn btn-primary me-2 mb-2 mb-sm-0" href="index.php?action=portfolio">Voir mes projets</a><a class="btn btn-outline-secondary mb-2 mb-sm-0" href="#">Télécharger mon cv</a>
-      </div>
+                <form action="" method="post">
+                  <div class="row mb-2">
+                    <div class="col-12 col-md-6 mb-2 mb-lg-0">
+                      <input class="form-control" name="firstname" type="text" placeholder="Prénom">
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <input class="form-control" name="lastname" type="text" placeholder="Nom de famille">
+                    </div>
+                  </div>
+                  <input class="form-control mb-2" name="email" type="email" placeholder="Adresse électronique">
+                  <div class="row mb-2">
+                    <div class="col-12 col-md-6 mb-2 mb-lg-0">
+                      <input class="form-control" name="password" type="password" placeholder="Mot de passe">
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <input class="form-control" name="repeatPassword" type="password" placeholder="Confirmer">
+                    </div>
+                  </div>
+                  
+                  <label class="mb-3">
+                    <input class="form-check-input me-2" type="checkbox" name="terms" value="1">
+                    <small class="text-muted">En vous inscrivant, vous acceptez nos <a href="#">Conditions d'utilisation, notre Politique de confidentialité des données</a> et <a href="#">notre Politique en matière de cookies.</a>.</small>
+                  </label>
+                  <button type="submit" class="btn btn-primary py-2 w-100 mb-3">S'inscrire</button>
+                </form>
+                
+                <p class="text-muted">
+                  <span><small>Vous avez déjà un compte ?</small></span>
+                  <a href="#">Connectez-vous.</a>
+                </p>
+              </div>
             </div>
           </div>
+          <div class="d-none d-lg-block position-absolute top-0 end-0 bottom-0 w-50" style="background-image: url('bootstrap5-plain-assets/images/blue-400-square.png'); background-repeat: no-repeat; background-size: cover;"></div>
         </div>
       </section>
                         
@@ -80,7 +95,7 @@
         <div class="mb-5"></div>
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-between">
-            <p>All rights reserved © Ntimba Software 2023</p>
+            <p>Tous droits réservés. © Ntimba Software 2023</p>
             <div>
               <a class="d-inline-block me-4" href="#">
                 <img src="bootstrap5-plain-assets/socials/facebook.svg" alt="">

@@ -29,33 +29,24 @@
         </div>
       </nav>
                         
-      <section class="py-5">
+      <section class="position-relative py-5">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-5 mb-5 mb-md-0">
-              <h2 class="display-5 fw-bold mb-3">Salut, Je suis Ntimba</h2>
-              <p class="lead text-muted mb-4">With this tool, you will get much better results at work and develop new skills. Will you take the risk of trying the latest version of our application?</p>
-              <a class="btn btn-primary" href="#">Contactez-moi</a>
-            </div>
-            <div class="col-12 col-md-6 ms-auto">
-              <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-square.png" alt="">
+          <div class="row">
+            <div class="col-12 col-md-9 col-lg-5 mx-auto mx-lg-0 mb-5">
+              <div>
+                <div class="mx-auto text-center py-5">
+                  <form action="#">
+                    <span class="text-muted">Vous avez oublié votre mot de passe ?</span>
+                    <h3 class="fw-bold mb-5">Entrez votre adresse e-mail et nous vous enverrons la marche à suivre pour réinitialiser votre mot de passe.</h3>
+                    <input class="form-control mb-2" name="email" type="email" placeholder="Adresse e-mail">
+                    <button class="btn btn-primary py-2 w-100 mb-3">Envoyer ma demande</button>
+                    <a class="d-inline-block link-secondary mb-4" href="index.php?action=login"><small>Je me souviens de mon mot de passe</small></a>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-                        
-      <section class="py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 col-xl-7 text-center">
-
-              <h2 class="display-5 fw-bold mt-2 mb-3">À propos de moi</h2>
-              <p class="lead text-muted mb-4">If you have ever wondered how to develop your brand, this is the place for you. Take a big step forward in growing your business with this great tool.</p>
-              <div class="d-flex flex-wrap justify-content-center">
-      <a class="btn btn-primary me-2 mb-2 mb-sm-0" href="index.php?action=portfolio">Voir mes projets</a><a class="btn btn-outline-secondary mb-2 mb-sm-0" href="#">Télécharger mon cv</a>
-      </div>
-            </div>
-          </div>
+          <div class="d-none d-lg-block position-absolute top-0 end-0 bottom-0 w-50" style="background-image: url('bootstrap5-plain-assets/images/blue-400-square.png'); background-repeat: no-repeat; background-size: cover;"></div>
         </div>
       </section>
                         

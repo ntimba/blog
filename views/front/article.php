@@ -4,7 +4,7 @@
     <title>Page title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-bootstrap.png">
 </head>
 <body>
@@ -29,33 +29,51 @@
         </div>
       </nav>
                         
-      <section class="py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-5 mb-5 mb-md-0">
-              <h2 class="display-5 fw-bold mb-3">Salut, Je suis Ntimba</h2>
-              <p class="lead text-muted mb-4">With this tool, you will get much better results at work and develop new skills. Will you take the risk of trying the latest version of our application?</p>
-              <a class="btn btn-primary" href="#">Contactez-moi</a>
+      <section class="position-relative py-5"><div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-lg-6 col-xl-5 mb-5 mb-lg-0">
+            <div class="d-flex flex-wrap">
+              <div class="d-flex justify-content-center align-items-center mb-3">
+                <a href="#">Home</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" style="width: 12px;height: 12px"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="#">Blog</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" style="width: 12px;height: 12px"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="#">Article</a>
+              </div>
+              <h2 class="display-5 fw-bold mb-4">Lorem ipsum dolor sit amet consectutar domor at elis</h2>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="me-4">
+                  <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-avatar.png" alt="" style="width: 56px;height: 56px"></div>
+                <div>
+                  <h4 class="fw-bold">Danny Bailey</h4>
+                  <p class="text-muted mb-0">February 26, 2021</p>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-md-6 ms-auto">
-              <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-square.png" alt="">
+          </div>
+          <div class="col-12 col-lg-6 offset-xl-1">
+            <img class="img-fluid rounded" src="bootstrap5-plain-assets/images/blue-400-horizontal.png" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6 mx-auto">
+            <p class="lead text-muted mb-4">These types of questions led me to miss numerous deadlines, and I wasted time and energy in back-and-forth communication. Sadly, this situation could have been avoided if the wireframes had provided enough detail.</p>
+            <p class="lead text-muted mb-4">These types of questions led me to miss numerous deadlines, and I wasted time and energy in back-and-forth communication. Sadly, this situation could have been avoided if the wireframes had provided enough detail.</p>
+            <p class="lead text-muted mb-4">Now that I am a UX designer, I notice that some designers tend to forget that wireframes are equally creative and technical. We are responsible for designing great ideas, but we are also responsible for creating product specifications. I admit that there can be so many details to remember that it’s easy to lose track. To save time and energy for myself, I gathered all of my years of wireframing knowledge into a single checklist that I refer to throughout the process. And now I am sharing this knowledge with you, so that you can get back to being creative.</p>
+          </div>
+        </div>
+      
+        <div class="row">
+          <form>
+            <div class="mb-3">
+              <textarea class="form-control" rows="3"></textarea></div>
+          </form>
+          <div class="d-flex mt-5">
+            <div class="flex-shrink-0">
+              <img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"></div>
+            <div class="ms-3">
+              <div class="fw-bold">John Doh</div>
+              When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
             </div>
           </div>
         </div>
-      </section>
-                        
-      <section class="py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 col-xl-7 text-center">
-
-              <h2 class="display-5 fw-bold mt-2 mb-3">À propos de moi</h2>
-              <p class="lead text-muted mb-4">If you have ever wondered how to develop your brand, this is the place for you. Take a big step forward in growing your business with this great tool.</p>
-              <div class="d-flex flex-wrap justify-content-center">
-      <a class="btn btn-primary me-2 mb-2 mb-sm-0" href="index.php?action=portfolio">Voir mes projets</a><a class="btn btn-outline-secondary mb-2 mb-sm-0" href="#">Télécharger mon cv</a>
-      </div>
-            </div>
-          </div>
         </div>
       </section>
                         

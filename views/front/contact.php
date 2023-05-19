@@ -4,7 +4,7 @@
     <title>Page title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-bootstrap.png">
 </head>
 <body>
@@ -29,33 +29,36 @@
         </div>
       </nav>
                         
-      <section class="py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-5 mb-5 mb-md-0">
-              <h2 class="display-5 fw-bold mb-3">Salut, Je suis Ntimba</h2>
-              <p class="lead text-muted mb-4">With this tool, you will get much better results at work and develop new skills. Will you take the risk of trying the latest version of our application?</p>
-              <a class="btn btn-primary" href="#">Contactez-moi</a>
-            </div>
-            <div class="col-12 col-md-6 ms-auto">
-              <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-square.png" alt="">
+      <section class="py-5"><div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+            <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-square.png" alt=""></div>
+          <div class="col-12 col-lg-5 ms-auto">
+            <div>
+              <h3 class="display-5 mb-5" contenteditable="true">Souhaitez-vous obtenir une estimation pour votre projet ?<div>N'hésitez pas à me le faire savoir</div></h3>
+              <div class="d-flex mb-4">
+                <form>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Quel est votre nom ?"></div>
+      
+                  <div class="mb-3">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Votre adresse e-mail"></div>
+      
+                  <div class="mb-3">
+                    <textarea class="form-control" rows="3"></textarea></div>
+      
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input"><label class="form-check-label">J'accèpte les conditions de sksksk</label>
+                  </div>
+                  <div class="my-5"></div>
+                  <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+                </form>
+              </div>
+      
+      
             </div>
           </div>
         </div>
-      </section>
-                        
-      <section class="py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 col-xl-7 text-center">
-
-              <h2 class="display-5 fw-bold mt-2 mb-3">À propos de moi</h2>
-              <p class="lead text-muted mb-4">If you have ever wondered how to develop your brand, this is the place for you. Take a big step forward in growing your business with this great tool.</p>
-              <div class="d-flex flex-wrap justify-content-center">
-      <a class="btn btn-primary me-2 mb-2 mb-sm-0" href="index.php?action=portfolio">Voir mes projets</a><a class="btn btn-outline-secondary mb-2 mb-sm-0" href="#">Télécharger mon cv</a>
-      </div>
-            </div>
-          </div>
         </div>
       </section>
                         

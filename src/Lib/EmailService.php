@@ -15,7 +15,7 @@ class EmailService {
     }
 
     public function prepareConfirmationEmail($username, $email, $confirmationLink) {
-        $subject = "Confirmation d'inscription";
+        $subject = "Confirmation d'inscription au blog de ntimba.com.";
         $message = $this->getConfirmationEmailBody($username, $confirmationLink);
         $headers = 'From: webmaster@' . $_SERVER['HTTP_HOST'] . "\r\n" .
                    'Reply-To: webmaster@' . $_SERVER['HTTP_HOST'] . "\r\n" .

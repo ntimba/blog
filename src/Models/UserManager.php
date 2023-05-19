@@ -17,18 +17,34 @@ class UserManager
     // Get user ID
     public function getUserId( string $email ): int
     {
-        $query = 'SELECT user_id FROM user WHERE user_email = :user_email';
+        $query = 'SELECT id FROM user WHERE email = :email';
         $statement = $this->db->getConnection()->prepare($query);
-        $statement->bindParam(":user_email", $email);
+        $statement->bindParam(":email", $email);
         $statement->execute();
 
         $result = $statement->fetch(PDO::FETCH_ASSOC);
-        return $result['user_id'] ?? 0;
+        return $result['id'] ?? 0;
     }
 
-    public function getUser( int $id ): array
+    public function getUser( int $id ): mixed
     {
-        // code
+        // echo $id;
+        $query = 'SELECT id, firstname, lastname, email, password, registrationDate, role, token, profilePicture, statut, auditedAccount FROM user WHERE id = :id';
+        $statement = $this->db->getConnection()->prepare($query);
+        $statement->execute([
+            'id' => $id
+        ]);
+
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+
+        if ( $result === false ) {
+            return false;
+        }
+        
+        $user = new User();
+        $user->hydrate( $result );
+        return $user;
+
     }
 
     public function getAllUsers(): array
@@ -39,25 +55,40 @@ class UserManager
     public function createUser($newuser) : void
     {
         // code
-        $query = 'INSERT INTO user(user_firstname, user_lastname, user_email, user_password, user_registration_date, user_role, user_token, user_profile_picture, user_biography, user_statut, user_audited_account) VALUES(:user_firstname, :user_lastname, :user_email, :user_password, NOW(), :user_role, :user_token, :user_profilepicture, :user_biography, :user_statut, :user_audited_account)';
+        $query = 'INSERT INTO user(firstname, lastname, email, password, registrationDate, role, token, profilePicture, biography, statut, auditedAccount) 
+                  VALUES(:firstname, :lastname, :email, :password, NOW(), :role, :token, :profilePicture, :biography, :statut, :auditedAccount)';
         $statement = $this->db->getConnection()->prepare($query);
         $statement->execute([
-            'user_firstname' => $newuser->getFirstname(),
-            'user_lastname' => $newuser->getLastname(),
-            'user_email' => $newuser->getEmail(),
-            'user_password' => $newuser->getPassword(),
-            'user_role' => $newuser->getRole(), 
-            'user_token' => $newuser->getToken(),
-            'user_profilepicture' => NULL,
-            'user_biography' => NULL,
-            'user_statut' => $newuser->getUserstatut(),
-            'user_audited_account' => 0
+            'firstname' => $newuser->getFirstname(),
+            'lastname' => $newuser->getLastname(),
+            'email' => $newuser->getEmail(),
+            'password' => $newuser->getPassword(),
+            'role' => $newuser->getRole(), 
+            'token' => $newuser->getToken(),
+            'profilePicture' => $newuser->getProfilePicture(),
+            'biography' => NULL,
+            'statut' => $newuser->getStatut(),
+            'auditedAccount' => 0
         ]);
     }
 
-    public function updateUser()
+    public function updateUser(User $user)
     {
-        // code
+        $query = 'UPDATE user SET firstname = :firstname, lastname = :lastname, email = :email, password = :password, registrationDate = :registrationDate, role = :role, token = :token, profilePicture = :profilePicture, statut = :statut, auditedAccount = :auditedAccount WHERE id = :id';
+        $statement = $this->db->getConnection()->prepare($query);
+        $statement->execute([
+            'id' => $user->getId(),
+            'firstname' => $user->getFirstname(),
+            'lastname' => $user->getLastname(),
+            'email' => $user->getEmail(),
+            'password' => $user->getPassword(),
+            'registrationDate' => $user->getRegistrationDate(),
+            'role' => $user->getRole(),
+            'token' => $user->getToken(),
+            'profilePicture' => $user->getProfilePicture(),
+            'statut' => $user->getStatut(),
+            'auditedAccount' => $user->getAuditedAccount(),
+        ]);
     }
 
     public function deleteUser()

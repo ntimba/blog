@@ -4,7 +4,7 @@
     <title>Page title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-bootstrap.png">
 </head>
 <body>
@@ -29,33 +29,17 @@
         </div>
       </nav>
                         
-      <section class="py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-5 mb-5 mb-md-0">
-              <h2 class="display-5 fw-bold mb-3">Salut, Je suis Ntimba</h2>
-              <p class="lead text-muted mb-4">With this tool, you will get much better results at work and develop new skills. Will you take the risk of trying the latest version of our application?</p>
-              <a class="btn btn-primary" href="#">Contactez-moi</a>
-            </div>
-            <div class="col-12 col-md-6 ms-auto">
-              <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-square.png" alt="">
-            </div>
+      <section class="py-5"><div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <h2 class="h1 fw-bold mb-5">When I was a developer, I often had a hundred questions when</h2>
+            <div class="mb-5">
+              <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-horizontal.png" alt=""></div>
+            <p class="lead text-muted mb-4">These types of questions led me to miss numerous deadlines, and I wasted time and energy in back-and-forth communication. Sadly, this situation could have been avoided if the wireframes had provided enough detail.</p>
+            <p class="lead text-muted mb-4">These types of questions led me to miss numerous deadlines, and I wasted time and energy in back-and-forth communication. Sadly, this situation could have been avoided if the wireframes had provided enough detail.</p>
+            <p class="lead text-muted mb-4">Now that I am a UX designer, I notice that some designers tend to forget that wireframes are equally creative and technical. We are responsible for designing great ideas, but we are also responsible for creating product specifications. I admit that there can be so many details to remember that it’s easy to lose track. To save time and energy for myself, I gathered all of my years of wireframing knowledge into a single checklist that I refer to throughout the process. And now I am sharing this knowledge with you, so that you can get back to being creative.</p>
           </div>
         </div>
-      </section>
-                        
-      <section class="py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 col-xl-7 text-center">
-
-              <h2 class="display-5 fw-bold mt-2 mb-3">À propos de moi</h2>
-              <p class="lead text-muted mb-4">If you have ever wondered how to develop your brand, this is the place for you. Take a big step forward in growing your business with this great tool.</p>
-              <div class="d-flex flex-wrap justify-content-center">
-      <a class="btn btn-primary me-2 mb-2 mb-sm-0" href="index.php?action=portfolio">Voir mes projets</a><a class="btn btn-outline-secondary mb-2 mb-sm-0" href="#">Télécharger mon cv</a>
-      </div>
-            </div>
-          </div>
         </div>
       </section>
                         
