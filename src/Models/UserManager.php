@@ -100,17 +100,4 @@ class UserManager
     {
         // code
     }
-
-    public function filter()
-    {
-        // code
-    }
-
-    public function sort()
-    {
-        // code
-    }
-
-
-
 }

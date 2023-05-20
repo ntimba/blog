@@ -35,7 +35,7 @@
             <div class="col-12 col-md-9 col-lg-5 mx-auto mx-lg-0 mb-5">
               <div>
                 <div class="mx-auto text-center py-5">
-                  <form action="#">
+                  <form action="" method="POST">
                     <span class="text-muted">Connexion</span>
                     <h3 class="fw-bold mb-5">Rejoignez notre communauté</h3>
                     <input class="form-control mb-2" name="email" type="email" placeholder="Adresse e-mail">

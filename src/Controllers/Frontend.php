@@ -1,7 +1,6 @@
 <?php
 // Src/Controllers/Front.php
 
-
 declare(strict_types=1);
 
 namespace App\Controllers;
@@ -12,11 +11,6 @@ use App\Models\UserManager;
 use App\Controllers\EmailController;
 
 // Fonction 
-function debug($var){
-    echo '<pre>';
-    var_dump($var);
-    echo '</pre>';
-}
 
 
 class Frontend
@@ -68,6 +62,52 @@ class Frontend
     
     // To display the login page
     public function getLogin(){
+        
+
+        if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password']) && !empty($_POST['password']) ) {
+
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+            // get userData
+            
+            $userManager = new UserManager();
+
+            $userId = $userManager->getUserId( $email );
+            if( $userId ) {
+                $userData = $userManager->getUser( $userId );
+
+
+                $hashedPasswordFromDatabase = $userData->getPassword();
+
+                if( password_verify( $password, $hashedPasswordFromDatabase ) ) {
+                    // ob_start();
+                    $_SESSION['user_id'] = $userId;
+
+                    header('Location: index.php?action=dashboard');
+                    // ob_end_flush();
+                } else {
+                    $error[] = "Mot de passe incorect";
+                }
+
+            }else{
+                $error[] = "Cet utilisateur n'existe pas, vous pouvez créer un compte pour rejoindre notre communauté";
+                header('Location: index.php');
+            }
+
+
+
+           
+            
+            
+            // Vérifier que le compte soit vérifier 
+
+            
+        }else{
+            $error[] = "Remplissez tous les champs.";
+        }
+
+        
         require "views/front/login.php";
     }
 

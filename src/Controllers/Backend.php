@@ -23,7 +23,21 @@ class Backend
 {   
     public function getDashboard()
     {
-        require "./views/back/dashboard.php";
+        if( !isset( $_SESSION['user_id'] ) ){
+            header( 'Location: index.php' );
+            exit();
+        }
+
+        require "./views/back/index.php";
+
+    }
+
+    public function getLogout()
+    {
+        // session_start();
+        unset( $_SESSION['user_id'] );
+        session_destroy();
+        header('Location: index.php');
     }
     
     public function getArticles()

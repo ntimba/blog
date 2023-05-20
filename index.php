@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // Database connecion
 use App\Lib\DatabaseConnection;
 
@@ -12,11 +14,11 @@ require __DIR__ . '/vendor/autoload.php';
 
 
 
-function debug($var){
-    echo '<pre>';
-    var_dump($var);
-    echo '</pre>';
-}
+// function debug($var){
+//     // echo '<pre>';
+//     var_dump($var);
+//     // echo '</pre>';
+// }
 
 
 // $connection = new DatabaseConnection;
@@ -28,7 +30,6 @@ if( isset($_GET['action']) && $_GET['action'] !== '' ) {
     $backend = new Backend;
 
     switch ($_GET['action']) {
-
         // Front
         case 'login':
             $frontend->getLogin();
@@ -63,7 +64,6 @@ if( isset($_GET['action']) && $_GET['action'] !== '' ) {
             $frontend->getContact();
             break;
         case 'page':
-
             // Affichage des pages normal
         case 'page':
             $frontend->getPage();
@@ -73,10 +73,12 @@ if( isset($_GET['action']) && $_GET['action'] !== '' ) {
             // Ajouter afficher la page de confirmation de mail
             $frontend->verifyAccount();
             break;
-            
             // Back
         case 'dashboard':
             $backend->getDashboard();
+            break;
+        case 'logout':
+            $backend->getLogout();
             break;
         case 'articles':
             $backend->getArticles();
