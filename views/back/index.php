@@ -71,13 +71,13 @@
                     </a>
                   </li>
                   <li class="nav-item nav-pills">
-                    <a class="nav-link text-secondary p-3 d-flex align-items-center" href="#">
+                    <a class="nav-link text-secondary p-3 d-flex align-items-center" href="index.php?action=articles">
                       <span class="d-inline-block text-secondary me-3">
                         <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16.6416 0.716687C16.0442 0.613798 15.4394 0.560837 14.8332 0.558353C12.7652 0.556658 10.7403 1.14966 8.99991 2.26669C7.25503 1.16433 5.23045 0.585879 3.16657 0.60002C2.56045 0.602503 1.95558 0.655464 1.35824 0.758353C1.16258 0.792085 0.985392 0.894569 0.858585 1.04735C0.731779 1.20013 0.663688 1.39316 0.666574 1.59169V11.5917C0.66479 11.7141 0.690013 11.8355 0.740449 11.9471C0.790886 12.0586 0.865296 12.1577 0.958385 12.2373C1.05147 12.3169 1.16096 12.3749 1.27904 12.4074C1.39712 12.4398 1.5209 12.4459 1.64157 12.425C2.83576 12.2183 4.05924 12.2526 5.23996 12.5259C6.42068 12.7993 7.53476 13.3061 8.51657 14.0167L8.61657 14.075H8.70824C8.80066 14.1135 8.89979 14.1334 8.99991 14.1334C9.10003 14.1334 9.19916 14.1135 9.29157 14.075H9.38324L9.48324 14.0167C10.4582 13.2903 11.5691 12.767 12.75 12.4778C13.931 12.1887 15.158 12.1395 16.3582 12.3334C16.4789 12.3542 16.6027 12.3482 16.7208 12.3157C16.8389 12.2833 16.9483 12.2252 17.0414 12.1456C17.1345 12.0661 17.2089 11.967 17.2594 11.8554C17.3098 11.7438 17.335 11.6225 17.3332 11.5V1.50002C17.3246 1.31015 17.2512 1.12895 17.1254 0.986468C16.9996 0.843991 16.8289 0.7488 16.6416 0.716687ZM8.16657 11.7917C6.62481 10.9806 4.90867 10.5573 3.16657 10.5584C2.89157 10.5584 2.61657 10.5584 2.33324 10.5584V2.22502C2.61079 2.20902 2.88903 2.20902 3.16657 2.22502C4.9444 2.22306 6.68342 2.74476 8.16657 3.72502V11.7917ZM15.6666 10.5917C15.3832 10.5917 15.1082 10.5917 14.8332 10.5917C13.0911 10.5906 11.375 11.0139 9.83324 11.825V3.72502C11.3164 2.74476 13.0554 2.22306 14.8332 2.22502C15.1108 2.20902 15.389 2.20902 15.6666 2.22502V10.5917ZM16.6416 14.05C16.0442 13.9471 15.4394 13.8942 14.8332 13.8917C12.7652 13.89 10.7403 14.483 8.99991 15.6C7.2595 14.483 5.2346 13.89 3.16657 13.8917C2.56045 13.8942 1.95558 13.9471 1.35824 14.05C1.24976 14.0672 1.14576 14.1057 1.05221 14.1633C0.95866 14.2208 0.877409 14.2963 0.81313 14.3854C0.748851 14.4744 0.702812 14.5753 0.677661 14.6822C0.65251 14.7891 0.648742 14.9 0.666574 15.0084C0.708923 15.2248 0.835316 15.4156 1.01807 15.539C1.20082 15.6623 1.42502 15.7083 1.64157 15.6667C2.83576 15.4599 4.05924 15.4942 5.23996 15.7676C6.42068 16.0409 7.53476 16.5478 8.51657 17.2584C8.65771 17.3588 8.82665 17.4128 8.99991 17.4128C9.17316 17.4128 9.34211 17.3588 9.48324 17.2584C10.4651 16.5478 11.5791 16.0409 12.7599 15.7676C13.9406 15.4942 15.1641 15.4599 16.3582 15.6667C16.5748 15.7083 16.799 15.6623 16.9817 15.539C17.1645 15.4156 17.2909 15.2248 17.3332 15.0084C17.3511 14.9 17.3473 14.7891 17.3222 14.6822C17.297 14.5753 17.251 14.4744 17.1867 14.3854C17.1224 14.2963 17.0412 14.2208 16.9476 14.1633C16.8541 14.1057 16.7501 14.0672 16.6416 14.05Z" fill="currentColor"></path>
                         </svg>
                       </span>
-                      <span class="small text-secondary me-auto">Blog</span>
+                      <span class="small text-secondary me-auto">Articles</span>
                       <span class="d-inline-block text-secondary">
                         <svg viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 12px;height: 12px">
                           <path d="M9.08329 0.666626C8.74996 0.333293 8.24996 0.333293 7.91663 0.666626L4.99996 3.58329L2.08329 0.666626C1.74996 0.333293 1.24996 0.333293 0.916626 0.666626C0.583293 0.999959 0.583293 1.49996 0.916626 1.83329L4.41663 5.33329C4.58329 5.49996 4.74996 5.58329 4.99996 5.58329C5.24996 5.58329 5.41663 5.49996 5.58329 5.33329L9.08329 1.83329C9.41663 1.49996 9.41663 0.999959 9.08329 0.666626Z" fill="currentColor"></path>
@@ -189,7 +189,7 @@
               <div class="p-4 bg-white rounded shadow">
                 <div class="position-relative mb-4">
                   <img class="img-fluid w-100 rounded" style="height: 155px; object-fit: cover;" src="https://images.unsplash.com/photo-1506792006437-256b665541e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=334&amp;q=80" alt="">
-                  <span class="position-absolute top-0 end-0 mt-2 me-2 bg-primary py-1 px-2 text-white rounded small">14 Tasks</span>
+
                 </div>
                 <div class="pb-4">
                   <div class="d-flex align-items-center justify-content-between mb-6">
@@ -234,7 +234,7 @@
               <div class="p-4 bg-white rounded shadow">
                 <div class="position-relative mb-4">
                   <img class="img-fluid w-100 rounded" style="height: 155px; object-fit: cover;" src="https://images.unsplash.com/photo-1589307004173-3c95204d00ee?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=334&amp;q=80" alt="">
-                  <span class="position-absolute top-0 end-0 mt-2 me-2 bg-primary py-1 px-2 text-white rounded small">14 Tasks</span>
+
                 </div>
                 <div class="pb-4">
                   <div class="d-flex align-items-center justify-content-between mb-6">
@@ -263,23 +263,14 @@
                     <span class="d-inline-block text-info small">6 days ago</span>
                   </div>
                 </div>
-                <div class="pt-4 border-top border-light">
-                  <div class="d-flex w-100 justify-content-between">
-                    <img class="img-fluid rounded-circle" style="width: 32px; height: 32px; object-fit: cover;" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;crop=faces&amp;fit=crop&amp;h=128&amp;w=128" alt="">
-                    <img class="ms-n2 img-fluid rounded-circle" style="width: 32px; height: 32px; object-fit: cover;" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt="">
-                    <img class="ms-n2 img-fluid rounded-circle" style="width: 32px; height: 32px; object-fit: cover;" src="https://images.unsplash.com/photo-1528936466093-76ffdfcf7a40?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
-                    <img class="ms-n2 img-fluid rounded-circle" style="width: 32px; height: 32px; object-fit: cover;" src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1055&amp;q=80" alt="">
-                    <div class="ms-n2 d-inline-flex justify-content-center align-items-center text-primary-dark bg-primary-light rounded-circle" style="width:32px; height: 32px; font-size: 12px;">+3</div>
-                    <a class="ms-auto btn btn-sm btn-primary" href="#">See Details</a>
-                  </div>
-                </div>
+                
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
               <div class="p-4 bg-white rounded shadow">
                 <div class="position-relative mb-4">
                   <img class="img-fluid w-100 rounded" style="height: 155px; object-fit: cover;" src="https://images.unsplash.com/photo-1483959651481-dc75b89291f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=301&amp;q=80" alt="">
-                  <span class="position-absolute top-0 end-0 mt-2 me-2 bg-primary py-1 px-2 text-white rounded small">14 Tasks</span>
+
                 </div>
                 <div class="pb-4">
                   <div class="d-flex align-items-center justify-content-between mb-6">

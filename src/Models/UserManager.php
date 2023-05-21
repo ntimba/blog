@@ -91,13 +91,12 @@ class UserManager
         ]);
     }
 
-    public function deleteUser()
+    public function deleteUser( int $id )
     {
-        // code
-    }
-
-    public function handleError()
-    {
-        // code
+        $query = 'DELETE FROM article WHERE id = :id';
+        $statement = $this->db->getConnection()->prepare($query);
+        $statement->execute([
+            'id' => $id
+        ]);
     }
 }

@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-bootstrap.png">
 </head>
 <body>
@@ -196,23 +197,13 @@
         </div>
         <div class="mx-auto ms-lg-80"><div class="row">
         <div class="col-12 col-lg-6">
-          <div class="card" style="width: 18rem;">
-            <img src="https://shuffle.dev/placeholder/pictures/bg_16-9.svg?primary=0d6efd" class="card-img-top" alt=""><div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+          
       
       
         </div>
         <div class="col-12 col-lg-6">
-          <br><button class="btn btn-primary">Ajouter un article</button>
-          <br><div class="card" style="width: 18rem;">
-          <img src="https://shuffle.dev/placeholder/pictures/bg_16-9.svg?primary=0d6efd" class="card-img-top" alt=""><div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <br><a href="index.php?action=addarticle" class="btn btn-primary" >Ajouter un article</a>
+
           </div>
           </div>
       
@@ -224,12 +215,8 @@
         <div class="container">
           <div class="py-4 bg-white rounded shadow">
             <div class="d-flex px-6 pb-5 mb-3 justify-content-between align-items-center border-bottom border-light">
-              <h5 class="mb-0">Sales Information</h5>
-              <div>
-                <button class="btn btn-sm text-secondary">Daily</button>
-                <button class="btn btn-sm text-secondary">Weekly</button>
-                <button class="btn btn-sm btn-primary">Monthly</button>
-              </div>
+              <h5 class="mb-0">Articles</h5>
+              
             </div>
             <div class="table-responsive">
               <table class="table table-borderless table-striped" style="font-size: 12px; min-width: max-content;">
@@ -250,7 +237,7 @@
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">12</td>
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">500</td>
                     <td class="py-4 px-4 align-middle">
-                      <span class="badge bg-success">Paid</span>
+                      <span class="badge bg-success">Publié</span>
                     </td>
                     <td class="py-4 px-4 align-middle">
                       <div class="d-flex">
@@ -285,7 +272,7 @@
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">12</td>
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">500</td>
                     <td class="py-4 px-4 align-middle">
-                      <span class="badge bg-success">Paid</span>
+                      <span class="badge bg-success">Publié</span>
                     </td>
                     <td class="py-4 px-4 align-middle">
                       <div class="d-flex">
@@ -320,7 +307,7 @@
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">12</td>
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">500</td>
                     <td class="py-4 px-4 align-middle">
-                      <span class="badge bg-success">Paid</span>
+                      <span class="badge bg-success">Publié</span>
                     </td>
                     <td class="py-4 px-4 align-middle">
                       <div class="d-flex">
@@ -355,7 +342,7 @@
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">12</td>
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">500</td>
                     <td class="py-4 px-4 align-middle">
-                      <span class="badge bg-success">Paid</span>
+                      <span class="badge bg-success">Publié</span>
                     </td>
                     <td class="py-4 px-4 align-middle">
                       <div class="d-flex">
@@ -390,7 +377,7 @@
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">12</td>
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">500</td>
                     <td class="py-4 px-4 align-middle">
-                      <span class="badge bg-success">Paid</span>
+                      <span class="badge bg-success">Publié</span>
                     </td>
                     <td class="py-4 px-4 align-middle">
                       <div class="d-flex">
@@ -425,7 +412,7 @@
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">12</td>
                     <td class="py-4 px-4 fw-bold text-secondary align-middle">500</td>
                     <td class="py-4 px-4 align-middle">
-                      <span class="badge bg-success">Paid</span>
+                      <span class="badge bg-success">Publié</span>
                     </td>
                     <td class="py-4 px-4 align-middle">
                       <div class="d-flex">

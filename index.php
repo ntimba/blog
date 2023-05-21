@@ -14,11 +14,11 @@ require __DIR__ . '/vendor/autoload.php';
 
 
 
-// function debug($var){
-//     // echo '<pre>';
-//     var_dump($var);
-//     // echo '</pre>';
-// }
+function debug($var){
+    echo '<pre>';
+    var_dump($var);
+    echo '</pre>';
+}
 
 
 // $connection = new DatabaseConnection;
@@ -80,8 +80,14 @@ if( isset($_GET['action']) && $_GET['action'] !== '' ) {
         case 'logout':
             $backend->getLogout();
             break;
+        case 'createcategory':
+            $backend->getCategories();
+            break;
         case 'articles':
-            $backend->getArticles();
+            $backend->getPosts();
+            break;
+        case 'addpost':
+            $backend->getAddPost();
             break;
         case 'users':
             $backend->getUsers();
@@ -89,7 +95,6 @@ if( isset($_GET['action']) && $_GET['action'] !== '' ) {
         case 'comments':
             $backend->getComments();
             break;
-
         case 'test':
             $backend->getTestPage();
             break;

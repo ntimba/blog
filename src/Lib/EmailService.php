@@ -29,7 +29,7 @@ class EmailService {
         ob_start();
 
         // Include the email template
-        require 'Views/emails/registrationConfirmation.php';
+        require('Views/emails/registrationConfirmation.php');
 
         // Get the contents of the buffer
         $message = ob_get_contents();

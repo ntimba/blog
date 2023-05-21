@@ -17,47 +17,47 @@ class Frontend
 {    
     public function getVerifyAccount()
     {
-        require "./views/front/verify.php";
+        require("./views/front/verify.php");
     }
     
     public function getForgotPassword()
     {
-        require "./views/front/forgotpassword.php";
+        require("./views/front/forgotpassword.php");
     }
     
     public function getAbout()
     {
-        require "./views/front/about.php";
+        require("./views/front/about.php");
     }
 
     public function getSkills()
     {
-        require "./views/front/skills.php";
+        require("./views/front/skills.php");
     }
 
     public function getBlog()
     {
-        require "./views/front/blog.php";
+        require("./views/front/blog.php");
     }
 
     public function getPortfolio()
     {
-        require "./views/front/portfolio.php";
+        require("./views/front/portfolio.php");
     }
 
     public function getContact()
     {
-        require "./views/front/contact.php";
+        require("./views/front/contact.php");
     }
 
     public function getPage()
     {
-        require "./views/front/page.php";
+        require("./views/front/page.php");
     }
 
     // Pour afficher la page accout
     public function getAccountPage(){
-        require "views/back/account.php";
+        require("views/back/account.php");
     }
     
     // To display the login page
@@ -81,11 +81,10 @@ class Frontend
                 $hashedPasswordFromDatabase = $userData->getPassword();
 
                 if( password_verify( $password, $hashedPasswordFromDatabase ) ) {
-                    // ob_start();
+
                     $_SESSION['user_id'] = $userId;
 
                     header('Location: index.php?action=dashboard');
-                    // ob_end_flush();
                 } else {
                     $error[] = "Mot de passe incorect";
                 }
@@ -108,7 +107,7 @@ class Frontend
         }
 
         
-        require "views/front/login.php";
+        require("views/front/login.php");
     }
 
     // To display the sign up page
@@ -183,12 +182,12 @@ class Frontend
             }   
         }
         
-        require "views/front/register.php";
+        require("views/front/register.php");
     }
 
 
     public function getArticle(){
-        require "views/front/article.php";
+        require("views/front/article.php");
     }
     
 
@@ -220,11 +219,11 @@ class Frontend
             $error[] = "Une erreur s'est produite, vous pouvez créer un nouveau compte";
             header('Location: index.php');
         }
-        require "views/front/verifyuser.php";
+        require("views/front/verifyuser.php");
     }
 
     public function getTestPage()
     {
-        require 'views/test.php';
+        require('views/test.php');
     } 
 }

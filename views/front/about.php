@@ -33,12 +33,12 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-md-5 mb-5 mb-md-0">
-              <h2 class="display-5 fw-bold mb-3">Salut, Je suis Ntimba</h2>
+              <h2 class="display-5 fw-bold mb-3">Salut, Je suis Chancy</h2>
               <p class="lead text-muted mb-4">With this tool, you will get much better results at work and develop new skills. Will you take the risk of trying the latest version of our application?</p>
               <a class="btn btn-primary" href="#">Contactez-moi</a>
             </div>
             <div class="col-12 col-md-6 ms-auto">
-              <img class="img-fluid" src="bootstrap5-plain-assets/images/blue-400-square.png" alt="">
+              <img class="img-fluid" src="../../assets/img/aboutme_img.png" alt="">
             </div>
           </div>
         </div>
@@ -49,8 +49,9 @@
           <div class="row justify-content-center">
             <div class="col-12 col-lg-9 col-xl-7 text-center">
 
-              <h2 class="display-5 fw-bold mt-2 mb-3">À propos de moi</h2>
+              <!-- <h2 class="display-5 fw-bold mt-2 mb-3">À propos de moi</h2> -->
               <p class="lead text-muted mb-4">If you have ever wondered how to develop your brand, this is the place for you. Take a big step forward in growing your business with this great tool.</p>
+              <img class="mb-5 rounded-circle" src="../../assets/uploads/me.png" alt="">
               <div class="d-flex flex-wrap justify-content-center">
       <a class="btn btn-primary me-2 mb-2 mb-sm-0" href="index.php?action=portfolio">Voir mes projets</a><a class="btn btn-outline-secondary mb-2 mb-sm-0" href="#">Télécharger mon cv</a>
       </div>
