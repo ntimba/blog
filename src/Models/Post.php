@@ -10,7 +10,7 @@ class Post
     private string $title;
     private string $content;
     private string $creationDate;
-    private string $updateDate;
+    private ?string $updateDate;
     private string $slug;
     private int $categoryId;
     private int $userId;
@@ -69,7 +69,7 @@ class Post
     }
     
     
-    public function setUpdateDate(string $updateDate) : void
+    public function setUpdateDate(?string $updateDate) : void
     {
         if( is_string( $updateDate ) && !empty($updateDate) )
         {

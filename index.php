@@ -83,7 +83,7 @@ if( isset($_GET['action']) && $_GET['action'] !== '' ) {
         case 'createcategory':
             $backend->getCategories();
             break;
-        case 'articles':
+        case 'posts':
             $backend->getPosts();
             break;
         case 'addpost':

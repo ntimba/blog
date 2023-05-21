@@ -49,10 +49,10 @@ class Backend
             exit();
         }
 
-        if( !isset( $_SESSION['user_id'] ) ){
-            header( 'Location: index.php' );
-            exit();
-        }
+        // lister toute les articles 
+        $posts = new PostManager();
+        
+        $allPosts = $posts->getAllPosts();
 
         require("./views/back/articles.php");
     }
@@ -181,6 +181,12 @@ class Backend
             header( 'Location: index.php' );
             exit();
         }
+
+        // recupérer l'identifiant de l'article
+        // recupérer l'identifiant de l'utilisateur 
+        // Ajouter un commentaire
+        
+        
 
         require("./views/back/comments.php");
     }

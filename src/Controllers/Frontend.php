@@ -6,11 +6,22 @@ declare(strict_types=1);
 namespace App\Controllers;
 
 use App\Lib\Database;
+
 use App\Models\User;
 use App\Models\UserManager;
+
+
+use App\Models\Post;
+use App\Models\PostManager;
+
+use App\Models\Category;
+use App\Models\CategoryManager;
+
 use App\Controllers\EmailController;
 
-// Fonction 
+use App\Helpers\StringUtil;
+
+
 
 
 class Frontend
@@ -37,6 +48,12 @@ class Frontend
 
     public function getBlog()
     {
+        // lister toute les articles 
+        $posts = new PostManager();
+        $allPosts = $posts->getAllPosts();
+
+        $trimmedText = new StringUtil();
+        
         require("./views/front/blog.php");
     }
 
@@ -52,6 +69,10 @@ class Frontend
 
     public function getPage()
     {
+        // lister toute les articles 
+        $posts = new PostManager();
+        
+        $allPosts = $posts->getAllPosts();
         require("./views/front/page.php");
     }
 
@@ -188,6 +209,7 @@ class Frontend
 
     public function getArticle(){
         require("views/front/article.php");
+        
     }
     
 

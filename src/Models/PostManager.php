@@ -47,10 +47,31 @@ class PostManager
 
     }
 
-    public function getAllPosts(): array
+    public function getAllPosts()
     {
-        // code
+        $query = 'SELECT id, title, content, creationDate, updateDate, slug, categoryId, userId, image FROM article';
+        $statement = $this->db->getConnection()->prepare($query);
+        $statement->execute();
+
+        $postsData = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        if ( $postsData === false ) {
+            return false;
+        }
+
+        $categories = [];
+
+        foreach( $postsData as $postData ){
+            $post = new Post($postData);
+            $posts[] = $post;
+        }
+        return $posts;   
     }
+    
+    
+    
+    
+
 
     public function createPost($newpost) : void
     {
