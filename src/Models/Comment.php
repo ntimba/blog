@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models;
 
-class Post
+class Comment
 {
     private int $id;
     private string $content;
@@ -84,8 +84,6 @@ class Post
      *          GETTERS          *
      *****************************/
 
-    
-    
     public function getId() : int
     {
         return $this->id;

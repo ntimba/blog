@@ -153,6 +153,11 @@ class Post
         return $this->image;
     }
 
+    public function getCategoryName() : string
+    {
+        
+    }
+
     public function importImage($file, $destination)
     {
         if( $file['error'] == 0 ) {
@@ -178,5 +183,8 @@ class Post
         }
         return NULL;
     }
+
+
+    
     
 }

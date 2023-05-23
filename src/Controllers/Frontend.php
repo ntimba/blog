@@ -14,6 +14,9 @@ use App\Models\UserManager;
 use App\Models\Post;
 use App\Models\PostManager;
 
+use App\Models\Comment;
+use App\Models\CommentManager;
+
 use App\Models\Category;
 use App\Models\CategoryManager;
 
@@ -55,6 +58,27 @@ class Frontend
         $trimmedText = new StringUtil();
         
         require("./views/front/blog.php");
+    }
+
+    public function getPost( $identifier ){  
+        // Post 
+        $postManager = new PostManager();
+        $post = $postManager->getPost( $identifier );
+
+        // Categérie
+        
+        // comments
+        $commentManager = new CommentManager();
+        $comments = $commentManager->getComments($identifier);
+        if(!$comments){
+            $comments = "Pas encore de commentaire";
+        }
+
+        
+        // Personne commenté 
+
+
+        require("./views/front/post.php");
     }
 
     public function getPortfolio()

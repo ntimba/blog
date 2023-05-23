@@ -4,6 +4,8 @@ namespace App\Models;
 use App\Lib\Database;
 use PDO;
 
+use \App\Model\Comment;
+
 class CommentManager
 {    
     // Get User Id
@@ -47,10 +49,29 @@ class CommentManager
 
     }
 
-    public function getAllComment(): array
+
+
+    public function getComments( int $idArticle ): mixed
     {
-        // code
+        // echo $id;
+        $query = 'SELECT id, content, commentedDate, userId, validateComment FROM comment WHERE idArticle = :idArticle';
+        $statement = $this->db->getConnection()->prepare($query);
+        $statement->execute([
+            'idArticle' => $idArticle
+        ]);
+
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+
+        if ( $result === false ) {
+            return false;
+        }
+        
+        $comments = new Comment();
+        $comments->hydrate( $result );
+        return $comments;
+
     }
+    
 
     public function createComment($newComment) : void
     {

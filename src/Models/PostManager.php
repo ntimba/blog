@@ -28,8 +28,7 @@ class PostManager
 
     public function getPost( int $id ): mixed
     {
-        // echo $id;
-        $query = 'SELECT id, title, content, creationDate, updateDate, slug, categoryId, userId, image WHERE id = :id';
+        $query = 'SELECT id, title, content, creationDate, updateDate, slug, categoryId, userId, image FROM article WHERE id = :id';
         $statement = $this->db->getConnection()->prepare($query);
         $statement->execute([
             'id' => $id
@@ -42,10 +41,13 @@ class PostManager
         }
         
         $post = new Post();
-        $user->hydrate( $result );
-        return $user;
-
+        $post->hydrate( $result );
+        return $post;
     }
+
+
+
+
 
     public function getAllPosts()
     {

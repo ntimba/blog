@@ -23,6 +23,7 @@ function debug($var){
 
 // $connection = new DatabaseConnection;
 
+// recuperer tout les liens et les requette ici 
 
 
 if( isset($_GET['action']) && $_GET['action'] !== '' ) {
@@ -52,6 +53,15 @@ if( isset($_GET['action']) && $_GET['action'] !== '' ) {
             $frontend->getBlog();
             break;
                 
+        case 'post':
+            if( $_GET['id'] && $_GET['id'] > 0 ){
+                $identifier = (int) $_GET['id'];
+                $frontend->getPost( $identifier );
+            } else {
+                $frontend->getBlog();
+            }
+            break;
+
         case 'article':
             $frontend->getArticle();
             break;
@@ -63,7 +73,6 @@ if( isset($_GET['action']) && $_GET['action'] !== '' ) {
         case 'contact':
             $frontend->getContact();
             break;
-        case 'page':
             // Affichage des pages normal
         case 'page':
             $frontend->getPage();

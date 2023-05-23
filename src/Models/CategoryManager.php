@@ -43,7 +43,6 @@ class CategoryManager
         $category = new Category();
         $category->hydrate( $result );
         return $category;
-
     }
 
     public function getCategories()
