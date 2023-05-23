@@ -1,0 +1,58 @@
+.signupImage{
+    background-image: url(../img/handing-key.svg);
+    background-size: cover;
+    background-position: cover;
+}
+
+.bg-register-image{
+    background: url(https://source.unsplash.com/K4mSJ7kc0As/600x800);
+    background-position: center;
+}
+
+.bg-login-image{
+    background: url(https://source.unsplash.com/K4mSJ7kc0As/600x800);
+    background-position: center;
+}
+
+
+/* .p-5{
+    padding: 3rem!important;
+} */
+
+.p-45{
+    /* border: 3px solid red; */
+    padding: 3rem!important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+
+// Navigation
+
+.navbar{
+
+
+
+    // margin-bottom: 30px;
+    
+    &-brand{
+        img{
+            width: 60px;
+        }
+    }
+
+    &__contact-details{
+        font-size: 0.8rem;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+}

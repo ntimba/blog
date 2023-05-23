@@ -1,7 +1,6 @@
 # Backup and temporary files
 *~
 .*.swp
-.DS_Store
 *.bak
 *.tmp
 
@@ -32,7 +31,6 @@ vendor/
 
 # Editor configuration files
 .vscode/
-.idea/
 *.iml
 
 # Documentation files

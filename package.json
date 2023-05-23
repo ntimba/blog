@@ -4,7 +4,7 @@
   "description": "Blog créé dans le cadre d'une formation sur OpenClassrooms",
   "main": "index.php",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./assets/sass/main.scss:./assets/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ntimba/blog/issues"
   },
-  "homepage": "https://github.com/ntimba/blog#readme"
+  "homepage": "https://github.com/ntimba/blog#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
 }

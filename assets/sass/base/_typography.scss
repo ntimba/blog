@@ -1,0 +1,45 @@
+.text{
+    &-muted{
+        color: $muted-color;
+    }
+
+    &-danger{
+        color: $danger-color;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-main;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: $font-size-xlarge;
+}
+
+h2{
+    font-size: $font-size-large;
+}
+
+h3{
+    font-size: $font-size-normal;
+}
+
+h4{
+    font-size: $font-size-normal;
+}
+
+h5{
+    font-size: $font-size-normal;
+}
+
+h6{
+    font-size: $font-size-normal;
+}
+
+p{
+    margin-bottom: 1rem;
+}

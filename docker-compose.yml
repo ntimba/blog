@@ -12,19 +12,19 @@ services:
       - app-network
     
   mailhog:
-    build:
-      context: .
-      # image: mailhog/mailhog:latest
+    image: mailhog/mailhog:latest
       # restart: always
     ports: 
       - "1025:1025"
       - "8025:8025"
-
+    networks:
+      - app-network
+      
   mysql:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_DATABASE: exercice_db
+      MYSQL_DATABASE: ntimbablog
       MYSQL_USER: username
       MYSQL_PASSWORD: userpassword
       MYSQL_ROOT_PASSWORD: rootpassword
@@ -41,7 +41,7 @@ services:
       - mysql
     environment:
       PMA_HOST: mysql
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: rootpass
     ports:
       - "8081:80"
     networks:
